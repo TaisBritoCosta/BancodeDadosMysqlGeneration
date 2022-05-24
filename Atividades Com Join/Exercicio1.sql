@@ -37,7 +37,7 @@ select * from tb_personagens where ataque > 2000;
 
 select * from tb_personagens where defesa between 1000 and 2000;
 
-select * from tb_personagens where nome like "C%";
+select * from tb_personagens where nome like "%C%";
 
 select tb_personagens.nome, tb_personagens.ataque, tb_classe.descricao 
 from tb_personagens inner join tb_classe on tb_classe.id = tb_personagens.classe_id;
